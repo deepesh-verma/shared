@@ -1,0 +1,34 @@
+# Notes
+
+- Build tool
+  - Maven
+    - mvn 
+    - Install 
+    - Generate new project from archetype (skelton)
+      - mvn archetype:generate
+        - GroupId: com.learning 
+        - artifactId: test-app
+        - version: 1.0.0
+        - pakcage: (defaiult to GroupId)
+    - Package the project
+      - mvn package
+      - target
+        - sources
+        - test-sources
+        - resources
+        - test-resources
+        - executable .jar file
+    - Entry point to the main class 
+      - maven-jar-plugin
+        - configuration 
+          - Class's fully qualified name 
+    - Clean 
+      - mvn clean
+      - Deletes the target folder 
+    - Run the jar file 
+      - java -jar *.jar 
+    - Test class
+      - public void method
+      - @Test
+        - execute
+        - result verify
